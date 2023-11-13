@@ -1,0 +1,87 @@
+@charset "ISO-8859-1";
+h1, h3, p {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Change this line */
+    min-height: 100vh;
+    margin: 0;
+}
+
+.center-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style for the login button */
+#loginButton {
+    background-color: cornflowerblue; /* Default background color */
+    color: white; /* Default text color */
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+}
+
+/* Hover effect on the login button */
+#loginButton:hover {
+    background-color: cornflowerblue; /* Hover background color (same as default) */
+    color: white; /* Change text color on hover if needed */
+}
+
+ /* Add styling for the button */
+.btn-router {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+        
+/* Add hover effect for the button */
+.btn-router:hover {
+    background-color: #ff80ff;
+}
+
+/* Center the button within the paragraph */
+.center-paragraph {
+    text-align: center;
+}
+
+.ctr-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(128, 128, 255, 0.5); /* Reduce transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+/* Center the button within the paragraph */
+.center-paragraph {
+    text-align: center;
+}
+
+/* Center the button */
+.center-paragraph button {
+    display: block;
+    margin: auto auto;
+}

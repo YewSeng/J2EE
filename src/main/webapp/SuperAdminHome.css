@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+h1 {
+    text-align: center;
+}
+
+.btn-router {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/* Add hover effect for the button */
+.btn-router:hover {
+    background-color: #ff80ff;
+}
+.card-footer {
+    text-align: center;
+}
+.card-spacing {
+    margin-bottom: 20px; /* Add margin to create spacing between cards */
+}
+.center-button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.btn-center {
+    display: flex;
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+}

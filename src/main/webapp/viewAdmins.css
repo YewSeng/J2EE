@@ -1,0 +1,57 @@
+
+h1 {
+    text-align: center;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.center-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto; /* This centers the container horizontally */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.btn-center {
+    display: flex;
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /* Add styling for the button */
+.btn-router {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+        
+/* Add hover effect for the button */
+.btn-router:hover {
+    background-color: #ff80ff;
+}
+
+
+.ctr-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(128, 128, 255, 0.5); /* Reduce transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
