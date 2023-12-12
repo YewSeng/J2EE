@@ -12,7 +12,7 @@
 <body>
 	<%
 		UserDao dao = new UserDao();
-		User user = (User) session.getAttribute("user");
+	 	User user = (User) session.getAttribute("user");
 		int userId = Integer.parseInt(request.getParameter("id"));
 		user.setUserId(userId);
 		user.setUsername(request.getParameter("username"));

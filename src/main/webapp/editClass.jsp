@@ -61,7 +61,7 @@
 	    User user = userDao.getUserByBatchId(batchId);
 	
 	    // Set the user object in the session for other operations
-	    session.setAttribute("user", user);
+	    session.setAttribute("userDetails", user);
     %>
     <div class="batch-details">
         <div class="old-details">
@@ -82,6 +82,8 @@
             <form action="editClassController.jsp" method="post">
                 <label for="id"><b>USER ID:</b></label><br>
                 <input type="number" name="id" placeholder="User ID" value="<%= user.getUserId() %>" readonly><br>
+                <label for="oldUsername"><b>OLD USERNAME:</b></label><br>
+                <input type="text" name="oldUsername" placeholder="Username" value="<%= user.getUsername() %>" readonly><br>
                 <label for="username"><b>NEW USERNAME:</b></label><br>
                 <input type="text" name="username" placeholder="Enter new username" required><br>
                 <div id="usernameError" class="error-message text-danger"></div>

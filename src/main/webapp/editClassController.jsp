@@ -11,8 +11,9 @@
 </head>
 <body>
 	<%
-		UserDao dao = new UserDao();
-		User user = (User) session.getAttribute("user");
+    	UserDao dao = new UserDao();
+		String username = request.getParameter("oldUsername");
+		User user = dao.getUserByUsername(username);
 		int userId = Integer.parseInt(request.getParameter("id"));
 		user.setUserId(userId);
 		user.setUsername(request.getParameter("username"));
@@ -24,7 +25,7 @@
 			BatchDao batchDao = new BatchDao();
 			batchDao.increaseBatchSize(batchId);
 			batchDao.decreaseBatchSize(oldBatchId);
-			session.setAttribute("User", user);
+			session.setAttribute("UserDetails", user);
 	        String successMessage = "[User]"+ user.getUsername() + " have been updated by [User] " + session.getAttribute("User");
 	        session.setAttribute("successMessage", successMessage);	        
 			response.sendRedirect("viewUserClass.jsp");
